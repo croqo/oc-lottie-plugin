@@ -1,0 +1,11 @@
+name: Manager
+modelClass: Croqo\Lottie\Models\File
+form: $/croqo/lottie/models/file/fields.yaml
+defaultRedirect: croqo/lottie/manager
+create:
+    redirect: 'croqo/lottie/manager/update/:id'
+    redirectClose: croqo/lottie/manager
+update:
+    redirect: croqo/lottie/manager
+    redirectClose: croqo/lottie/manager
+preview: {  }

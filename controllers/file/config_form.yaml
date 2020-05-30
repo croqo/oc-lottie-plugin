@@ -1,0 +1,11 @@
+name: File
+modelClass: Croqo\Lottie\Models\File
+form: $/croqo/lottie/models/file/fields.yaml
+defaultRedirect: croqo/lottie/file
+create:
+    redirect: 'croqo/lottie/file/update/:id'
+    redirectClose: croqo/lottie/file
+update:
+    redirect: croqo/lottie/file
+    redirectClose: croqo/lottie/file
+preview: {  }

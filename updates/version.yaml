@@ -1,0 +1,11 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table croqo_lottie_files'
+    - builder_table_create_croqo_lottie_files.php
+1.0.3:
+    - 'Updated table croqo_lottie_files'
+    - builder_table_update_croqo_lottie_files.php
+1.0.4:
+    - 'Updated table croqo_lottie_files'
+    - builder_table_update_croqo_lottie_files_2.php

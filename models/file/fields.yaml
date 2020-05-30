@@ -1,0 +1,19 @@
+fields:
+    json:
+        label: 'croqo.lottie::lang.file.json'
+        span: full
+        placeholder: 'https://assets4.lottiefiles.com/packages/lf20_6Wfif1.json'
+        required: 1
+        type: text
+    title:
+        label: 'croqo.lottie::lang.file.title'
+        span: full
+        placeholder: 'Name it'
+        type: text
+    subtitle:
+        label: 'croqo.lottie::lang.file.subtitle'
+        size: huge
+        mode: tab
+        span: full
+        type: markdown
+        comment: 'croqo.lottie::lang.file.subtitle'

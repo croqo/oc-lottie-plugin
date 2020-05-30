@@ -1,0 +1,4 @@
+title: Manager
+modelClass: Croqo\Lottie\Models\File
+toolbar:
+    buttons: reorder_toolbar

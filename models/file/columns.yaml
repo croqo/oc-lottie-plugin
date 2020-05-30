@@ -1,0 +1,31 @@
+columns:
+    id:
+        label: id
+        type: number
+        searchable: true
+        sortable: true
+    json:
+        label: json
+        type: text
+        searchable: true
+        sortable: true
+    title:
+        label: title
+        type: text
+        searchable: true
+        sortable: true
+    subtitle:
+        label: subtitle
+        type: text
+        searchable: true
+        sortable: true
+    created_at:
+        label: created_at
+        type: datetime
+        searchable: true
+        sortable: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        searchable: true
+        sortable: true
