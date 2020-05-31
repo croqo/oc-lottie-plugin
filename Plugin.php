@@ -7,7 +7,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'Croqo\Lottie\Components\File' => 'lottieFile'
+            'Croqo\Lottie\Components\Collection' => 'LottieCollection',
+            'Croqo\Lottie\Components\Player' => 'LottiePlayer'
         ];
     }
 
