@@ -17,3 +17,9 @@ fields:
             field: title
             type: slug
         type: text
+    description:
+        label: 'croqo.lottie::lang.file.description'
+        size: large
+        mode: split
+        span: full
+        type: textarea

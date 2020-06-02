@@ -19,6 +19,11 @@ columns:
         type: text
         searchable: true
         sortable: true
+    description:
+        label: description
+        type: text
+        searchable: true
+        sortable: true
     created_at:
         label: created_at
         type: datetime
@@ -29,3 +34,4 @@ columns:
         type: datetime
         searchable: true
         sortable: true
+
