@@ -14,8 +14,13 @@ columns:
         type: text
         searchable: true
         sortable: true
-    subtitle:
-        label: subtitle
+    slug:
+        label: slug
+        type: text
+        searchable: true
+        sortable: true
+    description:
+        label: description
         type: text
         searchable: true
         sortable: true
@@ -29,3 +34,4 @@ columns:
         type: datetime
         searchable: true
         sortable: true
+

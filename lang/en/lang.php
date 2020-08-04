@@ -1,17 +1,18 @@
 <?php return [
     'plugin' => [
         'name' => 'Lottie',
-        'description' => '',
+        'description' => 'October CMS plugin to handle your lottie animations',
     ],
     'file' => [
         'subtitle' => 'Subtitle',
         'id' => 'LottieFiles file id',
-        'json' => 'JSON URL',
+        'json' => 'Lottie .json URL',
         'title' => 'Title',
         'manager' => 'Manage lotties',
         'files' => 'Files',
         'editor' => 'Editor',
         'new' => 'Add lottie',
+        'description' => 'Description',
     ],
     'editor' => [
         'title' => 'Lottie Manager',

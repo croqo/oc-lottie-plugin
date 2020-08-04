@@ -2,8 +2,8 @@ plugin:
     name: 'croqo.lottie::lang.plugin.name'
     description: 'croqo.lottie::lang.plugin.description'
     author: Croqo
-    icon: oc-icon-circle-thin
-    homepage: ''
+    icon: oc-icon-play
+    homepage: 'https://croqo.xyz'
 navigation:
     main-menu-lottie:
         label: 'croqo.lottie::lang.plugin.name'

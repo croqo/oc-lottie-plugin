@@ -5,15 +5,24 @@ fields:
         placeholder: 'https://assets4.lottiefiles.com/packages/lf20_6Wfif1.json'
         required: 1
         type: text
+    sort_order:
+        label: 'croqo.lottie::lang.file.sort_order'
+        span: left
+        default: '0'
+        type: number
     title:
         label: 'croqo.lottie::lang.file.title'
-        span: full
+        span: auto
         placeholder: 'Name it'
         type: text
-    subtitle:
-        label: 'croqo.lottie::lang.file.subtitle'
+    slug:
+        label: 'croqo.lottie::lang.file.slug'
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    description:
+        label: 'croqo.lottie::lang.file.description'
         size: huge
-        mode: tab
-        span: full
-        type: markdown
-        comment: 'croqo.lottie::lang.file.subtitle'
+        type: richeditor
