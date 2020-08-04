@@ -15,3 +15,12 @@
 1.0.6:
     - 'Updated table croqo_lottie_files'
     - builder_table_update_croqo_lottie_files_4.php
+1.0.7:
+    - 'Updated table croqo_lottie_files'
+    - builder_table_update_croqo_lottie_files_5.php
+1.0.8:
+    - Sortable
+    - builder_table_update_croqo_lottie_files_6.php
+1.0.9:
+    - 'Default sort_order = 0'
+    - builder_table_update_croqo_lottie_files_7.php

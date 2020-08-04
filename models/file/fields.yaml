@@ -5,6 +5,11 @@ fields:
         placeholder: 'https://assets4.lottiefiles.com/packages/lf20_6Wfif1.json'
         required: 1
         type: text
+    sort_order:
+        label: 'croqo.lottie::lang.file.sort_order'
+        span: left
+        default: '0'
+        type: number
     title:
         label: 'croqo.lottie::lang.file.title'
         span: auto
@@ -19,7 +24,5 @@ fields:
         type: text
     description:
         label: 'croqo.lottie::lang.file.description'
-        size: large
-        mode: split
-        span: full
-        type: textarea
+        size: huge
+        type: richeditor

@@ -12,6 +12,7 @@
         'files' => 'Files',
         'editor' => 'Editor',
         'new' => 'Add lottie',
+        'description' => 'Description',
     ],
     'editor' => [
         'title' => 'Lottie Manager',
