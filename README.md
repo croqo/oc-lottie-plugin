@@ -1,2 +1,4 @@
-# octobercms-plugin-lottie
-October CMS plugin to handle your lottie animations
+# Lottie integration
+October CMS plugin to use lottie animations on your website
+
+![og-image](assets/og-image.png)
