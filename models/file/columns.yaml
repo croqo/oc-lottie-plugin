@@ -34,4 +34,9 @@ columns:
         type: datetime
         searchable: true
         sortable: true
-
+    sort_order:
+        label: sort_order
+        type: number
+        default: '0'
+        searchable: true
+        sortable: true
