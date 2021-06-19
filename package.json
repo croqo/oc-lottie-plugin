@@ -1,0 +1,41 @@
+{
+  "name": "@croqo/motion",
+  "version": "0.1.0",
+  "description": "Lottie Player for October CMS",
+  "main": "index.js",
+  "scripts": {
+    "mix": "mix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/croqo/motion-plugin.git"
+  },
+  "keywords": [
+    "lottie",
+    "animation",
+    "interaction",
+    "vector",
+    "svg",
+    "responsive",
+    "dynamic",
+    "html",
+    "canvas",
+    "json"
+  ],
+  "author": "Croqo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/croqo/motion-plugin/issues"
+  },
+  "homepage": "https://github.com/croqo/motion-plugin#readme",
+  "devDependencies": {
+    "chokidar": "3.5.2",
+    "laravel-mix": "^6.0.24",
+    "lottie-web": "5.7.11",
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.4",
+    "uuid": "8.3.2",
+    "webpack": "^5.39.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
