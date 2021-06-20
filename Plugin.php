@@ -50,10 +50,10 @@ class Plugin extends PluginBase
      */
     public function registerComponents()
     {
-        return []; // Remove this line to activate
+        // return []; // Remove this line to activate
 
         return [
-            'Croqo\Motion\Components\MyComponent' => 'myComponent',
+            'Croqo\Motion\Components\Player' => 'Player',
         ];
     }
 
