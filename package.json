@@ -22,7 +22,7 @@
     "json"
   ],
   "author": "Croqo <the@croc.work>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/croqo/motion-plugin/issues"
   },
