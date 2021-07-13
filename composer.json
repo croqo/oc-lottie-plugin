@@ -1,7 +1,7 @@
 {
-    "name": "croqo/lottie",
+    "name": "croqo/lottie-plugin",
     "type": "october-plugin",
-    "description": "No description provided yet...",
+    "description": "October CMS plugin to use lottie animations on your website",
     "require": {
         "composer/installers": "^1.0"
     }
