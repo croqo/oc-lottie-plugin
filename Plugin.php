@@ -1,10 +1,10 @@
-<?php namespace Croqo\Motion;
+<?php namespace Croqo\Lottie;
 
 use Backend;
 use System\Classes\PluginBase;
 
 /**
- * Motion Plugin Information File
+ * Lottie Plugin Information File
  */
 class Plugin extends PluginBase
 {
@@ -53,7 +53,7 @@ class Plugin extends PluginBase
         // return []; // Remove this line to activate
 
         return [
-            'Croqo\Motion\Components\Player' => 'Player',
+            'Croqo\Lottie\Components\Player' => 'Player',
         ];
     }
 
@@ -67,8 +67,8 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'croqo.motion.some_permission' => [
-                'tab' => 'Motion',
+            'croqo.Lottie.some_permission' => [
+                'tab' => 'Lottie',
                 'label' => 'Some permission'
             ],
         ];
@@ -84,11 +84,11 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'motion' => [
-                'label'       => 'Motion',
-                'url'         => Backend::url('croqo/motion/mycontroller'),
+            'Lottie' => [
+                'label'       => 'Lottie',
+                'url'         => Backend::url('croqo/Lottie/mycontroller'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['croqo.motion.*'],
+                'permissions' => ['croqo.Lottie.*'],
                 'order'       => 500,
             ],
         ];

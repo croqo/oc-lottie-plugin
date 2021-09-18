@@ -1,4 +1,4 @@
-<?php namespace Croqo\Motion\Components;
+<?php namespace Croqo\Lottie\Components;
 
 /**
  * Player Component
@@ -9,8 +9,8 @@ class Player extends \Cms\Classes\ComponentBase
     public function componentDetails()
     {
         return [
-            'name' => 'Player Script',
-            'description' => 'Include this into layout/page with lottie animations'
+            'name' => 'Lottie player',
+            'description' => 'JS player / animation container'
         ];
     }
 
@@ -40,7 +40,7 @@ class Player extends \Cms\Classes\ComponentBase
     public function onRun()
     {
         $this->addJs("assets/main.js", [
-            "build" => "Croqo.Motion",
+            "build" => "Croqo.Lottie",
             "defer" => true
         ]);
     }
