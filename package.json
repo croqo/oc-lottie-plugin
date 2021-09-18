@@ -1,5 +1,5 @@
 {
-  "name": "@croqo/motion",
+  "name": "@croqo/lottie",
   "version": "0.2.0",
   "description": "Lottie jQuery player exclusively for October CMS",
   "main": "assets/main.js",

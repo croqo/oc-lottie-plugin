@@ -16,8 +16,8 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'Motion',
-            'description' => 'No description provided yet...',
+            'name'        => 'Lottie player',
+            'description' => 'October CMS plugin to use lottie animations on your website',
             'author'      => 'Croqo',
             'icon'        => 'icon-leaf'
         ];
