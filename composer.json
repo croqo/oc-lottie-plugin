@@ -1,7 +1,8 @@
 {
     "name": "croqo/motion-plugin",
     "type": "october-plugin",
-    "description": "No description provided yet...",
+    "license": "MIT",
+    "description": "Lottie player: Lightweight, lossless scalable animations for your website",
     "require": {
         "composer/installers": "~1.0"
     }

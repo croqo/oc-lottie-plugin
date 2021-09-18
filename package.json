@@ -1,7 +1,7 @@
 {
   "name": "@croqo/motion",
-  "version": "0.1.1",
-  "description": "Lottie Player for October CMS",
+  "version": "0.2.0",
+  "description": "Lottie jQuery player exclusively for October CMS",
   "main": "assets/main.js",
   "scripts": {
     "dev": "webpack --mode=development --watch",
@@ -14,7 +14,10 @@
   "keywords": [
     "lottie",
     "animation",
+    "animated",
+    "awesome",
     "interaction",
+    "interactive",
     "vector",
     "svg",
     "responsive",
@@ -24,7 +27,7 @@
     "json"
   ],
   "author": "Croqo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/croqo/motion-plugin/issues"
   },
