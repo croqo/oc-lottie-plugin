@@ -1,0 +1,5 @@
+/vendor/
+node_modules/
+Plugin.code-workspace
+package-lock.json
+yarn.lock

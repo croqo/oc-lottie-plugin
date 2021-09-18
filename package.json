@@ -1,0 +1,42 @@
+{
+  "name": "@croqo/lottie",
+  "version": "0.2.0",
+  "description": "Lottie jQuery player exclusively for October CMS",
+  "main": "assets/main.js",
+  "scripts": {
+    "dev": "webpack --mode=development --watch",
+    "pro": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/croqo/motion-plugin.git"
+  },
+  "keywords": [
+    "lottie",
+    "animation",
+    "animated",
+    "awesome",
+    "interaction",
+    "interactive",
+    "vector",
+    "svg",
+    "responsive",
+    "dynamic",
+    "html",
+    "canvas",
+    "json"
+  ],
+  "author": "Croqo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/croqo/motion-plugin/issues"
+  },
+  "homepage": "https://croqo.co",
+  "devDependencies": {
+    "lottie-web": "^5.7.13",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "peerDependencies": {
+  }
+}
