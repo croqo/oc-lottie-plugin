@@ -1,5 +1,0 @@
-/vendor/
-node_modules/
-*.code-workspace
-package-lock.json
-*.jsonc
