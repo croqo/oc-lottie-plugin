@@ -11,7 +11,7 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            "Croqo\Lottie\Components\Player" => "Player",
+            "Croqo\Lottie\Components\Player" => "lottie",
         ];
     }
 }
