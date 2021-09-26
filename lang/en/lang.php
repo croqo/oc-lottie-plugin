@@ -7,7 +7,12 @@
         "player" => 
         [
             "name" => "Lottie animation",
-            "description" => "JS player / animation container"
+            "description" => "JS player / animation container",
+            "src" => [
+                "title" => "Path",
+                "description" => "Lottie animation URL (*.json)",
+                "validationMessage" => "It looks like NOT valid path to *.json file",
+            ],
         ],
     ],
 ];
