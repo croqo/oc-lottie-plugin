@@ -30,7 +30,7 @@ class Player extends ComponentBase
                 "title" => "croqo.lottie::lang.components.player.src.title",
                 "description" => "croqo.lottie::lang.components.player.src.description",
                 "validationPattern" => "^https:\/\/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)\.json+$",
-                "validationMessage" => "croqo.lottie::lang.components.player.src.validationMessage",
+                "validationMessage" => "croqo.lottie::lang.components.player.src.validation_message",
                 "placeholder" => "https://*****.json"
             ]
         ];

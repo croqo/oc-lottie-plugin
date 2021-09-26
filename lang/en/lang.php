@@ -11,7 +11,7 @@
             "src" => [
                 "title" => "Path",
                 "description" => "Lottie animation URL (*.json)",
-                "validationMessage" => "It looks like NOT valid path to *.json file",
+                "validation_message" => "It looks like NOT valid path to *.json file",
             ],
         ],
     ],
