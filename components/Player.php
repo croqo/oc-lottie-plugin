@@ -1,42 +1,44 @@
 <?php namespace Croqo\Lottie\Components;
 
-/**
- * Player Component
- */
-class Player extends \Cms\Classes\ComponentBase
-{
+use Cms\Classes\ComponentBase;
 
+class Player extends ComponentBase
+{
+    /**
+     * @return array
+     */
     public function componentDetails()
     {
         return [
-            'name' => 'Lottie player',
-            'description' => 'JS player / animation container'
+            "name" => "croqo.lottie::lang.components.player.name",
+            "description" => "croqo.lottie::lang.components.player.description"
         ];
     }
-
-    /**
-     *  @var array All animations on the page
-     */
-    public $lottie = [];
 
     /**
      *  @var string JSON path
      */
-    public $src;
+    public $url;
 
+    /**
+     * @return array
+     */
     public function defineProperties()
     {
         return [
-            'src' => [
-                'title' => 'Path',
-                'description' => 'Lottie animation URL (*.json)',
-                'validationPattern' => '^https:\/\/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)\.json+$',
-                'validationMessage' => 'It looks like NOT valid path to *.json file',
-                'placeholder' => 'https://*****.json'
+            "url" => [
+                "title" => "croqo.lottie::lang.components.player.url.title",
+                "description" => "croqo.lottie::lang.components.player.url.description",
+                "validationPattern" => "^https:\/\/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)\.json+$",
+                "validationMessage" => "croqo.lottie::lang.components.player.url.validation_message",
+                "placeholder" => "https://*****.json"
             ]
         ];
     }
 
+    /**
+     * @return void
+     */
     public function onRun()
     {
         $this->addJs("assets/main.js", [
@@ -45,9 +47,12 @@ class Player extends \Cms\Classes\ComponentBase
         ]);
     }
 
+    /**
+     * @return void
+     */
     public function onRender()
     {
-        $this->src = $this->property("src");
+        $this->url = $this->property("url");
     }
 
 }

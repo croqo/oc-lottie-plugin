@@ -1,5 +1,6 @@
-/vendor/
+assets/
 node_modules/
+vendor/
 package-lock.json
 *.map
 .*

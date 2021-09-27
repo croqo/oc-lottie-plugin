@@ -15,6 +15,15 @@ $(()=>{
 function loadAnimation(container, animation){
     return Lottie.loadAnimation({
         container: container,
-        path: animation
+        path: animation,
+        rendererSettings: {
+            progressiveLoad: true,
+            filterSize: {
+              width: '200%',
+              height: '200%',
+              x: '-50%',
+              y: '-50%',
+            }
+        }
     })
 };
