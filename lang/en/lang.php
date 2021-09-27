@@ -8,10 +8,10 @@
         [
             "name" => "Lottie animation",
             "description" => "JS player / animation container",
-            "src" => [
-                "title" => "Path",
+            "url" => [
+                "title" => "Animation URL",
                 "description" => "Lottie animation URL (*.json)",
-                "validation_message" => "It looks like NOT valid path to *.json file",
+                "validation_message" => "It looks like NOT valid URL to *.json file",
             ],
         ],
     ],
