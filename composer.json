@@ -1,0 +1,9 @@
+{
+    "name": "croqo/lottie-plugin",
+    "type": "october-plugin",
+    "license": "MIT",
+    "description": "Lottie player: Lightweight, lossless scalable animations for your website",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}
