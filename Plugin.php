@@ -14,4 +14,10 @@ class Plugin extends PluginBase
             "Croqo\Lottie\Components\Player" => "lottie",
         ];
     }
+    public function registerPageSnippets()
+    {
+        return [
+            "Croqo\Lottie\Components\Player" => "lottie",
+        ];
+    }
 }
