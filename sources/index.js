@@ -1,12 +1,12 @@
 "use strict"
 
-import $ from "jquery";
 import Lottie from "lottie-web";
 
-$(()=>{
-    $("figure.lottie").each((index, element)=>{
+document.addEventListener("DOMContentLoaded", () => {
+    Array.prototype.forEach.call(document.querySelectorAll("figure.lottie"), (element) => {
+        console.log(element);
         const 
-            path = $(element).data("path"),
+            path = element.getAttribute("data-path"),
             anim = loadAnimation(element, path)
         ;
     });

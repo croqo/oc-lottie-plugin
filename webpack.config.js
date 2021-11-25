@@ -10,8 +10,7 @@ module.exports = {
         path: path.resolve(__dirname, "assets"),
         filename: "[name].js"
     },
-    externals: {
-        jquery: "jQuery"
+        ],
     },
     plugins: [
         new webpack.SourceMapDevToolPlugin({
