@@ -45,6 +45,10 @@ class Player extends ComponentBase
             "build" => "Croqo.Lottie",
             "defer" => true
         ]);
+        $this->addCss("assets/main.css", [
+            "build" => "Croqo.Lottie",
+            "defer" => true
+        ]);
     }
 
     /**

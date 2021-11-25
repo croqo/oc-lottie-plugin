@@ -1,22 +1,44 @@
 const 
+    MiniCssExtractPlugin = require("mini-css-extract-plugin"),
     webpack = require("webpack"),
     path = require("path")
 ;
 module.exports = {
     devtool: false,
-    entry: "./sources",
+    entry: {
+        "main": [
+            "./sources/index.js",
+            "./sources/style.sass"
+        ]
+    },
     output: {
         clean: true,
-        path: path.resolve(__dirname, "assets"),
-        filename: "[name].js"
+        path: path.resolve(__dirname, "assets")
     },
+    module: {
+        rules: [
+            {
+                test: /\.s[ac]ss$/i,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                {
+                    loader: "css-loader",
+                    options: {
+                    sourceMap: true,
+                    },
+                },
+                {
+                    loader: "sass-loader",
+                    options: {
+                    sourceMap: true,
+                    },
+                },
+                ],
+            },
         ],
     },
     plugins: [
-        new webpack.SourceMapDevToolPlugin({
-            filename: '[name].js.map',
-            exclude: ['vendor.js'],
-        }),
+        new MiniCssExtractPlugin(),
         new webpack.ProgressPlugin({
             activeModules: false,
             entries: true,
@@ -24,5 +46,8 @@ module.exports = {
             dependencies: true,
             percentBy: "entries"
         })
-    ]
+    ],
+    optimization: {
+        minimize: true
+    }
 }
