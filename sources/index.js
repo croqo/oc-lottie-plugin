@@ -21,7 +21,7 @@ function loadAnimation(container, animation){
         path: animation,
         rendererSettings: {
             rendererSettings: {
-                preserveAspectRatio: 'xMidYMid slice'
+                preserveAspectRatio: "xMidYMid slice"
             },
             progressiveLoad: true,
             filterSize: {
