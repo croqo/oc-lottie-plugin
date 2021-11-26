@@ -1,15 +1,17 @@
 "use strict"
 
 import Lottie from "lottie-web";
+window.lottieAnimations = window.lottieAnimations ?? new Map();
 
 document.addEventListener("DOMContentLoaded", () => {
-    Array.prototype.forEach.call(document.querySelectorAll("figure.lottie"), (element) => {
-        console.log(element);
+    Array.prototype.forEach.call(document.querySelectorAll(".lottie"), (element) => {
         const 
+            id = element.id,
             path = element.getAttribute("data-path"),
             look = element.getAttribute("data-look")
         ;
         element.classList.add(look);
+        lottieAnimations.set(id, loadAnimation(element, path));
     });
 });
 
