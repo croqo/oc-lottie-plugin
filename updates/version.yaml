@@ -2,3 +2,7 @@ v1.0.0: 👋 hello world
 v1.0.1: 
   - lottie-web v5.7.14
   - page snippet
+v1.1.0: 
+  - jQuery dependency removed
+  - Custom player look feature
+  - lottie-web v5.8.1
