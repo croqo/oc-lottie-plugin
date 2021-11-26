@@ -19,6 +19,10 @@ class Player extends ComponentBase
      *  @var string JSON path
      */
     public $url;
+    /**
+     *  @var string JSON path
+     */
+    public $look;
 
     /**
      * @return array
@@ -32,6 +36,17 @@ class Player extends ComponentBase
                 "validationPattern" => "^https:\/\/[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,4}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)\.json+$",
                 "validationMessage" => "croqo.lottie::lang.components.player.url.validation_message",
                 "placeholder" => "https://*****.json"
+            ],
+            "look" => [
+                "title"       => "croqo.lottie::lang.components.player.look.title",
+                "description" => "croqo.lottie::lang.components.player.look.description",
+                "type"        => "dropdown",
+                "default"     => "default",
+                "options"     => 
+                [
+                    "default" => "Image",
+                    "wallpaper" => "Wallpaper"
+                ]
             ]
         ];
     }
@@ -57,6 +72,7 @@ class Player extends ComponentBase
     public function onRender()
     {
         $this->url = $this->property("url");
+        $this->look = $this->property("look");
     }
 
 }

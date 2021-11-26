@@ -1,16 +1,38 @@
-@mixin fixed()
-    width: 100vw !important
-    min-height: 100vh !important
-    position: fixed
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: 10
-
-.lottie
+@mixin figure()
     width: 100%
     height: 100%
-    &.is-fixed
-        @include fixed()
-        
+
+@mixin overlay()
+    &::before
+        content: " "
+        position: absolute
+        overflow: hidden
+        height: 100vh
+        width: 100vw
+        top: 0
+        left: 0
+        z-index: 2
+        background: white
+        opacity: 0.5
+        mix-blend-mode: lighten
+
+@mixin image()
+    position: relative
+    z-index: 1
+    overflow: hidden
+
+@mixin wallpaper()
+    position: absolute
+    overflow: hidden
+    height: 100vh
+    width: 100vw
+    top: 0
+    left: 0
+    z-index: -1
+    opacity: 1
+    transition: all 0.5s ease-out
+
+.lottie
+    @include figure()
+    &.is-wallpaper
+        @include wallpaper()        

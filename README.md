@@ -6,7 +6,7 @@ This __October CMS__ plugin allows to add Lottie animations on your website with
 
 🤔 [What is Lottie?](https://lottiefiles.com/what-is-lottie)
 
-## Component
+## Component Player
 
 Use this code in INI section to inject JS player into current page/partial/layout.
 
@@ -16,10 +16,18 @@ Use this code in INI section to inject JS player into current page/partial/layou
 
 When it's done, you can use Lottie player as many times as you want with different values of **url** property.
 
-Next example code will generate two animations following one-by-one:
++ ### Player.**url** *
 
-```twig
-{% component 'lottie' url='https://example.com/path/to/file1.json' %}
+    HTTP link to lottie animation json.
 
-{% component 'lottie' url='https://example.com/path/to/file2.json' %}
-```
+    Next example code will generate two animations following one-by-one:
+
+    ```twig
+    {% component 'lottie' url='https://example.com/path/to/file1.json' %}
+
+    {% component 'lottie' url='https://example.com/path/to/file2.json' %}
+    ```
+
++ ### Player.**look**
+
+    Lottie player CSS style

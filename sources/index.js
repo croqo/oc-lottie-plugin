@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(element);
         const 
             path = element.getAttribute("data-path"),
-            anim = loadAnimation(element, path)
+            look = element.getAttribute("data-look")
         ;
+        element.classList.add(look);
     });
 });
 

@@ -1,2 +1,10 @@
 {##}
-<figure id="{{ __SELF__.id }}" class="lottie" data-path="{{ __SELF__.url }}"></figure>
+<figure 
+    id="{{ __SELF__.id }}" 
+    class="lottie" 
+    data-path="{{ __SELF__.url }}"
+    {% if __SELF__.look %} 
+    data-look="{{ __SELF__.look }}"
+    {% endif %}
+>   
+</figure>
