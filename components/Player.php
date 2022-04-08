@@ -41,10 +41,10 @@ class Player extends ComponentBase
                 "title"       => "croqo.lottie::lang.components.player.look.title",
                 "description" => "croqo.lottie::lang.components.player.look.description",
                 "type"        => "dropdown",
-                "default"     => "default",
+                "default"     => "image",
                 "options"     => 
                 [
-                    "default" => "Image",
+                    "image" => "Image",
                     "wallpaper" => "Wallpaper"
                 ]
             ]

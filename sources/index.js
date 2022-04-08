@@ -16,9 +16,7 @@ function loadAnimation(container){
         path: container.getAttribute("data-path"),
         name: container.id,
         rendererSettings: {
-            rendererSettings: {
-                preserveAspectRatio: "xMidYMid slice"
-            },
+            preserveAspectRatio: container.getAttribute("data-ratio") ?? "xMidYMid meet",
             progressiveLoad: true,
             filterSize: {
               width: '200%',
