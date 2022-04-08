@@ -15,14 +15,9 @@ class Player extends ComponentBase
         ];
     }
 
-    /**
-     *  @var string JSON path
-     */
     public $url;
-    /**
-     *  @var string JSON path
-     */
     public $look;
+    public $ratio;
 
     /**
      * @return array
@@ -52,11 +47,11 @@ class Player extends ComponentBase
                 "title"       => "croqo.lottie::lang.components.player.ratio.title",
                 "description" => "croqo.lottie::lang.components.player.ratio.description",
                 "type"        => "dropdown",
-                "default"     => "meet",
+                "default"     => "xMidYMid meet",
                 "options"     => 
                 [
-                    "meet" => "meet",
-                    "slice" => "slice"
+                    "xMidYMid meet" => "Meet",
+                    "xMidYMid slice" => "Slice"
                 ]
             ]
         ];
