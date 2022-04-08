@@ -1,1 +1,1 @@
-.lottie{width:100%;height:100%}.lottie.is-wallpaper{position:absolute;overflow:hidden;height:100vh;width:100vw;top:0;left:0;z-index:-1;opacity:1;transition:all .5s ease-out}
+.lottie .svg{width:100%;height:100%}.lottie.wallpaper{position:absolute;width:100vw;height:100vh;top:0px;left:0px;right:0px;bottom:0px;z-index:-999;transition:all .5s ease-out;overflow:hidden}.lottie.wallpaper svg{position:relative}
