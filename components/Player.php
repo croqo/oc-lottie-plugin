@@ -47,6 +47,17 @@ class Player extends ComponentBase
                     "image" => "Image",
                     "wallpaper" => "Wallpaper"
                 ]
+            ],
+            "ratio" => [
+                "title"       => "croqo.lottie::lang.components.player.ratio.title",
+                "description" => "croqo.lottie::lang.components.player.ratio.description",
+                "type"        => "dropdown",
+                "default"     => "meet",
+                "options"     => 
+                [
+                    "meet" => "meet",
+                    "slice" => "slice"
+                ]
             ]
         ];
     }
@@ -73,6 +84,7 @@ class Player extends ComponentBase
     {
         $this->url = $this->property("url");
         $this->look = $this->property("look");
+        $this->ratio = $this->property("ratio");
     }
 
 }
