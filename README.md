@@ -16,18 +16,30 @@ Use this code in INI section to inject JS player into current page/partial/layou
 
 When it's done, you can use Lottie player as many times as you want with different values of **url** property.
 
-+ ### Player.**url** *
++ ### url
 
     HTTP link to lottie animation json.
 
     Next example code will generate two animations following one-by-one:
 
     ```twig
-    {% component 'lottie' url='https://example.com/path/to/file1.json' %}
+    {% component 'lottie' url='https://path.to/file1.json' %}
 
-    {% component 'lottie' url='https://example.com/path/to/file2.json' %}
+    {% component 'lottie' url='https://path.to/file2.json' %}
     ```
 
-+ ### Player.**look**
++ ### look
 
     Lottie player CSS style
+    
+    ```twig
+    {% component 'lottie' url='https://path.to/file.json' look='custom-css-style' %}}
+    ```
+    
++ ### ratio
+
+    preserveAspectRatio option (rendererSettings)
+    
+    ```twig
+    {% component 'lottie' url='https://path.to/file.json' ratio='xMidYMid slice' %}}
+    ```
