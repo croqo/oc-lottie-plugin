@@ -5,20 +5,16 @@ window.lottieAnimations = window.lottieAnimations ?? new Map();
 
 document.addEventListener("DOMContentLoaded", () => {
     Array.prototype.forEach.call(document.querySelectorAll(".lottie"), (element) => {
-        const 
-            id = element.id,
-            path = element.getAttribute("data-path"),
-            look = element.getAttribute("data-look")
-        ;
-        element.classList.add(look);
-        lottieAnimations.set(id, loadAnimation(element, path));
+        const id = element.id;
+        lottieAnimations.set(id, loadAnimation(element));
     });
 });
 
-function loadAnimation(container, animation){
+function loadAnimation(container){
     return Lottie.loadAnimation({
         container: container,
-        path: animation,
+        path: container.getAttribute("data-path"),
+        name: container.id,
         rendererSettings: {
             rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
