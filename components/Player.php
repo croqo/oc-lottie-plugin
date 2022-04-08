@@ -15,14 +15,9 @@ class Player extends ComponentBase
         ];
     }
 
-    /**
-     *  @var string JSON path
-     */
     public $url;
-    /**
-     *  @var string JSON path
-     */
     public $look;
+    public $ratio;
 
     /**
      * @return array
@@ -41,11 +36,22 @@ class Player extends ComponentBase
                 "title"       => "croqo.lottie::lang.components.player.look.title",
                 "description" => "croqo.lottie::lang.components.player.look.description",
                 "type"        => "dropdown",
-                "default"     => "default",
+                "default"     => "image",
                 "options"     => 
                 [
-                    "default" => "Image",
+                    "image" => "Image",
                     "wallpaper" => "Wallpaper"
+                ]
+            ],
+            "ratio" => [
+                "title"       => "croqo.lottie::lang.components.player.ratio.title",
+                "description" => "croqo.lottie::lang.components.player.ratio.description",
+                "type"        => "dropdown",
+                "default"     => "xMidYMid meet",
+                "options"     => 
+                [
+                    "xMidYMid meet" => "Meet",
+                    "xMidYMid slice" => "Slice"
                 ]
             ]
         ];
@@ -73,6 +79,7 @@ class Player extends ComponentBase
     {
         $this->url = $this->property("url");
         $this->look = $this->property("look");
+        $this->ratio = $this->property("ratio");
     }
 
 }
