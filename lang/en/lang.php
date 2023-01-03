@@ -13,6 +13,14 @@
                 "description" => "Lottie animation URL (*.json)",
                 "validation_message" => "It looks like NOT valid URL to *.json file",
             ],
+            "look" => [
+                "title" => "Visual Style",
+                "description" => "In form of...",
+            ],
+            "ratio" => [
+                "title" => "Aspect Ratio",
+                "description" => "In form of...",
+            ],
         ],
     ],
 ];
