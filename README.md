@@ -2,9 +2,9 @@
 
 This __October CMS__ plugin allows to add Lottie animations on your website with ease.
 
-![og-image](https://github.com/croqo/oc-lottie-plugin/blob/dev/sources/og-image.png)
+![og-image](https://raw.githubusercontent.com/croqo/oc-lottie-plugin/dev/sources/og-image.png)
 
-🤔 [What is Lottie?](https://lottiefiles.com/what-is-lottie)
+🤔 [What is Lottie? @lottiefiles.com](https://lottiefiles.com/what-is-lottie)
 
 ## Component Player
 
@@ -16,7 +16,7 @@ Use this code in INI section to inject JS player into current page/partial/layou
 
 When it's done, you can use Lottie player as many times as you want with different values of **url** property.
 
-+ ### url
++ ### __url__
 
     HTTP link to lottie animation json.
 
@@ -28,18 +28,22 @@ When it's done, you can use Lottie player as many times as you want with differe
     {% component 'lottie' url='https://path.to/file2.json' %}
     ```
 
-+ ### look
++ ### __look__
 
-    Lottie player CSS style
+    Lottie player CSS preset
     
     ```twig
-    {% component 'lottie' url='https://path.to/file.json' look='custom-css-style' %}}
+    {% component 'lottie' url='https://path.to/file1.json' look='image' %}}
+
+    {% component 'lottie' url='https://path.to/file2.json' look='wallpaper' %}}
     ```
     
-+ ### ratio
++ ### aspect __ratio__
 
     preserveAspectRatio option (rendererSettings)
     
     ```twig
-    {% component 'lottie' url='https://path.to/file.json' ratio='xMidYMid slice' %}}
+    {% component 'lottie' url='https://path.to/file1.json' ratio='xMidYMid slice' %}}    
+    
+    {% component 'lottie' url='https://path.to/file2.json' ratio='xMidYMid meet' %}}
     ```
