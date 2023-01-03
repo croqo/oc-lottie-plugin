@@ -1,6 +1,6 @@
 {
   "name": "@croqo/lottie",
-  "version": "1.2.0",
+  "version": "v1.2.1",
   "description": "Lottie js player exclusively for October CMS",
   "main": "assets/main.js",
   "scripts": {
@@ -31,17 +31,17 @@
   "bugs": {
     "url": "https://github.com/croqo/oc-lottie-plugin/issues"
   },
-  "homepage": "https://croqo.co",
+  "homepage": "https://croc.work",
   "dependencies": {
-    "lottie-web": "^5.9.1"
+    "lottie-web": "^5.10"
   },
   "devDependencies": {
-    "css-loader": "^6.7.1",
-    "mini-css-extract-plugin": "^2.6.0",
-    "sass": "^1.50.0",
-    "sass-loader": "^12.6.0",
-    "webpack": "^5.72.0",
-    "webpack-cli": "^4.9.2"
+    "css-loader": "^6.7.3",
+    "mini-css-extract-plugin": "^2.7.2",
+    "sass": "^1.57.1",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0"
   },
   "peerDependencies": {
   }
