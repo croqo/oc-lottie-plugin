@@ -1,6 +1,6 @@
 # `MIT License`
 
-Copyright ©️ 2021 **[CROQO](mailto:eugene@croqo.co)**
+Copyright ©️ 2023 **[CROQO](mailto:eugene@croqo.co)**
 
 *Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
