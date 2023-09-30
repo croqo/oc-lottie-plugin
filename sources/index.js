@@ -1,29 +1,39 @@
 "use strict"
 
-import Lottie from "lottie-web";
-window.lottieAnimations = window.lottieAnimations ?? new Map();
+import lottie from "lottie-web";
 
-document.addEventListener("DOMContentLoaded", () => {
-    Array.prototype.forEach.call(document.querySelectorAll(".lottie"), (element) => {
-        const id = element.id;
-        lottieAnimations.set(id, loadAnimation(element));
-    });
-});
-
-function loadAnimation(container){
-    return Lottie.loadAnimation({
-        container: container,
-        path: container.getAttribute("data-path"),
-        name: container.id,
-        rendererSettings: {
-            preserveAspectRatio: container.getAttribute("data-ratio") ?? "xMidYMid meet",
-            progressiveLoad: true,
-            filterSize: {
-              width: '200%',
-              height: '200%',
-              x: '-50%',
-              y: '-50%',
+oc.registerControl("lottie", class extends oc.ControlBase {
+    init() {
+        this.animation
+            = this.loadAnimation(this.animationConfig());
+        console.log(this);
+    }
+    connect() {
+        this.listen('DOMLoaded', this.animation.play());
+    }
+    disconnect() {
+        this.animation.destroy();
+    }
+    animationConfig() {
+        const result = {
+            container: this.element,
+            name: this.element.id,
+            path: this.config.path,
+            autoplay: false,
+            rendererSettings: {
+                preserveAspectRatio: this.config.ratio,
+                className: 'lottie',
+                filterSize: {
+                    width: "200%",
+                    height: "200%",
+                    x: "-50%",
+                    y: "-50%"
+                }
             }
-        }
-    })
-};
+        };
+        return result;
+    }
+    loadAnimation(config) {
+        return lottie.loadAnimation(config)
+    }
+});

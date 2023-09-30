@@ -37,7 +37,7 @@ class Player extends ComponentBase
                 "description" => "croqo.lottie::lang.components.player.look.description",
                 "type"        => "dropdown",
                 "default"     => "image",
-                "options"     => 
+                "options"     =>
                 [
                     "image" => "Image",
                     "wallpaper" => "Wallpaper"
@@ -48,7 +48,7 @@ class Player extends ComponentBase
                 "description" => "croqo.lottie::lang.components.player.ratio.description",
                 "type"        => "dropdown",
                 "default"     => "xMidYMid meet",
-                "options"     => 
+                "options"     =>
                 [
                     "xMidYMid meet" => "Meet",
                     "xMidYMid slice" => "Slice"
