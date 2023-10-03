@@ -6,20 +6,19 @@ oc.registerControl("lottie", class extends oc.ControlBase {
     init() {
         this.animation
             = this.loadAnimation(this.animationConfig());
-        console.log(this);
     }
     connect() {
-        this.listen('DOMLoaded', this.animation.play());
+        this.animation.play();
     }
     disconnect() {
         this.animation.destroy();
     }
     animationConfig() {
-        const result = {
+        const AnimationConfig = {
             container: this.element,
             name: this.element.id,
             path: this.config.path,
-            autoplay: false,
+            autoplay: this.config.autoplay ? true : false,
             rendererSettings: {
                 preserveAspectRatio: this.config.ratio,
                 className: 'lottie',
@@ -31,7 +30,7 @@ oc.registerControl("lottie", class extends oc.ControlBase {
                 }
             }
         };
-        return result;
+        return AnimationConfig;
     }
     loadAnimation(config) {
         return lottie.loadAnimation(config)
