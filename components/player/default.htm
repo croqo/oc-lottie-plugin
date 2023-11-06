@@ -1,11 +1,12 @@
 {##}
-    <figure 
-        id="{{ __SELF__.id }}" 
+    <figure
+        id="{{ __SELF__.id }}"
         class=
-        "lottie{% if __SELF__.look %} {{ __SELF__.look }}{% endif %}" 
+        "lottie{% if __SELF__.look %} {{ __SELF__.look }}{% endif %}"
+        data-control="lottie"
         data-path="{{ __SELF__.url }}"
-        {% if __SELF__.ratio %} 
+        {% if __SELF__.ratio %}
         data-ratio="{{ __SELF__.ratio }}"
         {% endif %}
-    >   
+    >
     </figure>
