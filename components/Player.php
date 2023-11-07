@@ -15,10 +15,6 @@ class Player extends ComponentBase
         ];
     }
 
-    public $url;
-    public $look;
-    public $ratio;
-
     /**
      * @return array
      */
@@ -37,7 +33,7 @@ class Player extends ComponentBase
                 "description" => "croqo.lottie::lang.components.player.look.description",
                 "type"        => "dropdown",
                 "default"     => "image",
-                "options"     => 
+                "options"     =>
                 [
                     "image" => "Image",
                     "wallpaper" => "Wallpaper"
@@ -48,7 +44,7 @@ class Player extends ComponentBase
                 "description" => "croqo.lottie::lang.components.player.ratio.description",
                 "type"        => "dropdown",
                 "default"     => "xMidYMid meet",
-                "options"     => 
+                "options"     =>
                 [
                     "xMidYMid meet" => "Meet",
                     "xMidYMid slice" => "Slice"
@@ -66,10 +62,6 @@ class Player extends ComponentBase
             "build" => "Croqo.Lottie",
             "defer" => true
         ]);
-        $this->addCss("assets/main.css", [
-            "build" => "Croqo.Lottie",
-            "defer" => true
-        ]);
     }
 
     /**
@@ -77,9 +69,7 @@ class Player extends ComponentBase
      */
     public function onRender()
     {
-        $this->url = $this->property("url");
-        $this->look = $this->property("look");
-        $this->ratio = $this->property("ratio");
+
     }
 
 }

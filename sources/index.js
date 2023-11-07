@@ -3,40 +3,48 @@
 import Lottie from "lottie-web";
 
 if (oc.useTurbo && oc.useTurbo()) {
+    // console.log('turbo is ON');
     oc.registerControl('lottie', class extends oc.ControlBase {
         init() {
             // Establish the control before running logic
-            this.lottieAnimation = loadAnimation(this.element);
+            this.animationItem = this.load();
         }
+
         connect() {
             // Element has appeared in DOM
-            this.lottieAnimation.play()
+            this.animationItem.play()
         }
 
         disconnect() {
             // Element was removed from DOM
-            this.lottieAnimation.destroy()
+            this.animationItem.destroy()
+        }
+
+        load() {
+            return loadAnimation(this.element)
         }
     })
 } else {
+    // console.log('turbo is OFF');
     document.addEventListener("DOMContentLoaded", () => {
-        Array.prototype.forEach.call(document.querySelectorAll(".lottie"), (element) => {
+        Array.prototype.forEach.call(document.querySelectorAll('[data-control="lottie"]'), (element) => {
             const id = element.id,
-            lottieAnimation = loadAnimation(element);
-            lottieAnimation.play();
+            animationItem = loadAnimation(element);
+            animationItem.play();
         });
     });
 }
 
-
-function loadAnimation(container){
+function loadAnimation(el){
+    const data = el.dataset;
     return Lottie.loadAnimation({
-        container: container,
-        path: container.getAttribute("data-path"),
-        autoplay: false,
-        name: container.id,
+        container: el,
+        path: data.path,
+        autoplay: data.autoplay,
+        loop: data.loop,
+        name: el.id,
         rendererSettings: {
-            preserveAspectRatio: container.getAttribute("data-ratio") ?? "xMidYMid meet",
+            preserveAspectRatio: data.ratio ?? "xMidYMid meet",
             progressiveLoad: true,
             filterSize: {
               width: '200%',

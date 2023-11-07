@@ -1,4 +1,4 @@
-const 
+const
     MiniCssExtractPlugin = require("mini-css-extract-plugin"),
     webpack = require("webpack"),
     path = require("path")
@@ -7,8 +7,7 @@ module.exports = {
     devtool: false,
     entry: {
         "main": [
-            "./sources/index.js",
-            "./sources/style.sass"
+            "./sources/index.js"
         ]
     },
     output: {
