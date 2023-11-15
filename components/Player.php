@@ -58,7 +58,7 @@ class Player extends ComponentBase
      */
     public function onRun()
     {
-        $this->addJs("assets/main.js", [
+        $this->addJs("assets/js/main.js", [
             "build" => "Croqo.Lottie",
             "defer" => true
         ]);
