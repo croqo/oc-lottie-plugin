@@ -1,7 +1,11 @@
 {
   "scripts": {
-    "dev": "webpack --mode=development --watch",
-    "prod": "webpack --mode=production"
+    "mix": "npx mix --mix-config=src/webpack.mix.js",
+    "dev": "yarn mix watch",
+    "pro": "yarn mix --production",
+    "prod": "yarn mix --production",
+    "watch": "yarn mix watch",
+    "w": "yarn mix watch"
   },
   "repository": {
     "type": "git",
@@ -32,13 +36,8 @@
     "lottie-web": "^5.12.2"
   },
   "devDependencies": {
-    "css-loader": "^6.8.1",
-    "mini-css-extract-plugin": "^2.7.6",
-    "sass": "^1.63.6",
-    "sass-loader": "^13.3.2",
-    "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0"
   },
-  "peerDependencies": {
-  }
+  "peerDependencies": {}
 }

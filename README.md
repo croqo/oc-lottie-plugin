@@ -2,7 +2,7 @@
 
 This __October CMS__ plugin allows to add Lottie animations on your website with ease.
 
-![og-image](https://raw.githubusercontent.com/croqo/oc-lottie-plugin/dev/sources/og-image.png)
+![og-image](https://raw.githubusercontent.com/croqo/oc-lottie-plugin/dev/src/og-image.png)
 
 🤔 [What is Lottie? @lottiefiles.com](https://lottiefiles.com/what-is-lottie)
 
@@ -14,7 +14,7 @@ Use this code in INI section to inject JS player into current page/partial/layou
 [lottie]
 ```
 
-When it's done, you can use Lottie player as many times as you want with different values of **url** property.
+When it's done, you can use Lottie player as many times as you want with different values of __url__ property.
 
 + ### __url__
 
@@ -31,19 +31,19 @@ When it's done, you can use Lottie player as many times as you want with differe
 + ### __look__
 
     Lottie player CSS preset
-    
+
     ```twig
     {% component 'lottie' url='https://path.to/file1.json' look='image' %}}
 
     {% component 'lottie' url='https://path.to/file2.json' look='wallpaper' %}}
     ```
-    
+
 + ### aspect __ratio__
 
     preserveAspectRatio option (rendererSettings)
-    
+
     ```twig
-    {% component 'lottie' url='https://path.to/file1.json' ratio='xMidYMid slice' %}}    
-    
+    {% component 'lottie' url='https://path.to/file1.json' ratio='xMidYMid slice' %}}
+
     {% component 'lottie' url='https://path.to/file2.json' ratio='xMidYMid meet' %}}
     ```
