@@ -2,7 +2,7 @@
 
 This __October CMS__ plugin allows to add Lottie animations on your website with ease.
 
-![og-image](https://raw.githubusercontent.com/croqo/oc-lottie-plugin/dev/src/og-image.png)
+![og-image](https://raw.githubusercontent.com/croqo/oc-lottie-plugin/control/src/og-image.png)
 
 🤔 [What is Lottie? @lottiefiles.com](https://lottiefiles.com/what-is-lottie)
 
